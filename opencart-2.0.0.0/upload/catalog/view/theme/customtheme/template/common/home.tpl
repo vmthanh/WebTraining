@@ -29,12 +29,12 @@
           $image = "http://localhost/Training201410/opencart-2.0.0.0/upload/image/".$product['image'];  ?>
           <span style="background:#0066FF;color:#FFF" class="icon_label lbid2">Gift</span>                
           <div class="hb_image">
-            <a href="http://2tmobile.com/iphone-5s.html">
+            <a href="<?php echo $product['href'];?>">
               <img alt="<?php echo $product['name'];?>" src="<?php echo $image;?>">
             </a>
           </div>
           <div class="hb_name">
-            <a href="http://2tmobile.com/iphone-5s.html"><?php echo $product['name']; ?></a>
+            <a href="<?php echo $product['href'];?>"><?php echo $product['name']; ?></a>
             <div class="hb_opt">(16GB / 32GB / 64GB)</div>        
           </div>
           <div class="hb_price">
@@ -45,7 +45,7 @@
           </div>
           <div class="hb_buynow"><span class="hs_star"></span><a href="http://2tmobile.com/iphone-5s.html">Xem ngay</a></div>
           <div class="hb_desc">
-            <a href="http://2tmobile.com/iphone-5s.html" class="hb_ahref">
+            <a href="<?php echo $product['href'];?>" class="hb_ahref">
               <span class="bdesc">
                <?php foreach ($product['attribute_groups'] as $attribute_groups) { ?>
                <?php foreach ($attribute_groups['attribute'] as $attribute) { ?>
@@ -74,10 +74,10 @@
             <li class="hs_<?php echo $count;?>">
               <span style="background:#0066FF;color:#FFF" class="icon_label lbid2">Gift</span>           
               <div class="hs_image">
-                <a href="http://2tmobile.com/iphone-5.html"><img  alt="<?php echo $product['name'];?>" src="<?php echo $image;?>"></a>
+                <a href="<?php echo $product['href'];?>"><img  alt="<?php echo $product['name'];?>" src="<?php echo $image;?>"></a>
               </div>
               <h3 class="hs_name">
-               <a href="http://2tmobile.com/iphone-5.html">
+               <a href="<?php echo $product['href'];?>">
                  <?php echo $product['name'];?>
                </a></h3>
                <div class="hs_opt">(16GB / 32GB / 64GB)</div>        
@@ -87,7 +87,7 @@
                   <span class="price"><span class="hs_star"></span><font><span class="textp">Giá từ </span><?php echo $product['price'];?></font></span>
                 </div>
                 <div class="hs_bdesc">
-                  <a href="http://2tmobile.com/iphone-5.html" class="hs_bahref">
+                  <a href="<?php echo $product['href'];?>" class="hs_bahref">
                    <span class="lbdesc">
                     <?php foreach ($product['attribute_groups'] as $attribute_groups) { ?>
                     <?php foreach ($attribute_groups['attribute'] as $attribute) { ?>
@@ -470,12 +470,12 @@
                                                                           <span class="icon label lbid2" style="background:#0066FF;color:#FFF">GIFT</span>
                                                                           <div class="list_desc">
                                                                             <div class="list_image">
-                                                                              <a href="#">
+                                                                              <a href="<?php echo $product['href'];?>">
                                                                                 <img style = "heigh:130px; width:100px" src="<?php echo $image;?>" alt="<?php echo $product['name'];?>">
                                                                               </a>
                                                                             </div>
                                                                             <h3 class="list_name">
-                                                                              <a href="#"><?php echo $product['name'];?></a>
+                                                                              <a href="<?php echo $product['href'];?>"><?php echo $product['name'];?></a>
                                                                             </h3>
                                                                             <div class="list_opt">(16GB / 32Gb / 64GB)</div>
                                                                             <div class="list_price">
@@ -485,7 +485,7 @@
                                                                               </span>
                                                                             </div>
                                                                             <div class="list_bdesc">
-                                                                              <a href="#" class="lbdesc_href">
+                                                                              <a href="<?php echo $product['href'];?>" class="lbdesc_href">
                                                                                <?php foreach ($product['attribute_groups'] as $attribute_groups) { ?>
                                                                                <?php foreach ($attribute_groups['attribute'] as $attribute) { ?>
                                                                                <?php if ($attribute['name'] != 'Type') {?>
@@ -526,7 +526,7 @@
                                                                           <span class="icon label lbid2" style="background:#0066FF;color:#FFF">GIFT</span>
                                                                           <div class="list_desc">
                                                                             <div class="list_image">
-                                                                              <a href="#">
+                                                                              <a href="<?php echo $product['href'];?>">
                                                                                 <img style = "heigh:130px; width:100px" src="<?php echo $image;?>" alt="<?php echo $product['name'];?>">
                                                                               </a>
                                                                             </div>
@@ -541,7 +541,7 @@
                                                                               </span>
                                                                             </div>
                                                                             <div class="list_bdesc">
-                                                                              <a href="#" class="lbdesc_href">
+                                                                              <a href="<?php echo $product['href'];?>" class="lbdesc_href">
                                                                                <?php foreach ($product['attribute_groups'] as $attribute_groups) { ?>
                                                                                <?php foreach ($attribute_groups['attribute'] as $attribute) { ?>
                                                                                <?php if ($attribute['name'] != 'Type') {?>

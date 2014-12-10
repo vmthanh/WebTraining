@@ -67,7 +67,8 @@ class ModelCatalogProduct extends Model {
 				'date_modified'    => $result['date_modified'],
 				'viewed'           => $result['viewed'],
 				'attribute'    => $attribute_data,
-				'attribute_groups' => $attribute_groups
+				'attribute_groups' => $attribute_groups,
+				'href'        => $this->url->link('product/product', 'product_id=' . $result['product_id'])
 				);
 }
 
